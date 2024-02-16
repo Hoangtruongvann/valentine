@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: 1.5s ease 0s infinite pulse;
+  }
+  
+  .box {
+    height: 90%;
+    max-height: 400px;
+  }
+  
+  #heart {
+    height: 100%;
+    margin-left: auto;
+    animation: 1.5s ease 0s infinite beat;
+  }
+   
+  #text {
+    background-color: #fee;
+    padding: 10px;
+    text-align: center;
+   transform: translateY(-200px);
+    display: inline;
+    border-radius: 10px;
+  }
+  @keyframes beat {
+    0%, 50%, 100% { transform: scale(1, 1); }
+    30%, 80% { transform: scale(0.92, 0.95); }
+  }
+  
+  @keyframes pulse {
+    0%, 50%, 100% {  background: #fee; }
+    30%, 80% { background: #fff; }
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@200;400;600&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+}
+.cd__main{
+   background: pink !important;
+   font-family: 'Pacifico', cursive !important;
+   min-height: 450px;
+}
+body { 
+  display:flex;
+  background-color: pink;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.heart {
+  position: fixed;
+  font-size: 2.5rem;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  from {
+     transform: translateY(0vh) translateX(-10vw); 
+  }
+  to {
+     transform: translateY(105vh) translateX(10vw); 
+  }
+}
