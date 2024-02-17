@@ -46,6 +46,7 @@ function createKiss() {
   }, 5000);
 }
 function main(){
+    document.getElementById("text").style.display = "block"
     const strs = [
         "Bae à",
         "Yêu và được yêu em là điều hạnh phúc nhất đối với anh",
@@ -77,5 +78,5 @@ document.getElementById("click").addEventListener("click",function(){
     setTimeout(() => {
         document.getElementById("gift").style.display = "none"
        main();
-      }, 1000);
+      }, 3000);
 })

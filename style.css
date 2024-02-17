@@ -195,9 +195,7 @@ body {
   
   .spark1, .spark2, .spark3, .spark4, .spark5, .spark6 {
     position: absolute;
-    background-color: #fee440;
     border-radius:50%;
-    top:-9px;
     z-index:-1;
   }
   
@@ -206,7 +204,7 @@ body {
     height:8px;
     left:30px;
     top:-9px;
-    animation: fire 0.9s ease-in-out infinite, color 0.4s linear infinite;
+    animation: fire 0.9s ease-in-out infinite;
   }
   
   .spark1:before {
@@ -216,7 +214,6 @@ body {
     height:5px;
     top:8px;
     left:11px;
-    background-color: #fee440;
     border-radius:50%;
   }
   
@@ -225,7 +222,7 @@ body {
     height:9px;
     left:33px;
     top:-5px;
-    animation: fire2 0.28s ease-in-out infinite, color 0.4s linear infinite;
+    animation: fire2 0.28s ease-in-out infinite;
   }
   
   .spark2:before {
@@ -235,7 +232,6 @@ body {
     height:5px;
     top:12px;
     left:3px;
-    background-color: #fee440;
     border-radius:50%;
   }
   
@@ -244,7 +240,7 @@ body {
     height:8.5px;
     left:33px;
     top:-5px;
-    animation: fire3 0.36s ease-in-out infinite, color2 0.4s linear infinite;
+    animation: fire3 0.36s ease-in-out infinite;
   }
   
   .spark3:before {
@@ -254,7 +250,6 @@ body {
     height:5px;
     top:12px;
     left:-1px;
-    background-color: #fee440;
     border-radius:50%;
   }
   
@@ -263,7 +258,7 @@ body {
     height:7px;
     left:27px;
     top:-5px;
-    animation: fire2 0.24s ease-in-out infinite, color2 0.2s linear infinite;
+    animation: fire4 0.24s ease-in-out infinite;
   }
   
   .spark5 {
@@ -271,7 +266,7 @@ body {
     height:7px;
     left:29px;
     top:-5px;
-    animation: fire3 0.45s ease-in-out infinite, color 0.2s linear infinite;
+    animation: fire5 0.45s ease-in-out infinite;
   }
   
   .spark6 {
@@ -279,21 +274,34 @@ body {
     height:6px;
     left:29px;
     top:-5px;
-    animation: fire 0.35s ease-in-out infinite, color2 0.2s linear infinite;
+    animation: fire6 0.35s ease-in-out infinite;
+  }
+
+  @keyframes fire6 {
+    100% { transform:translateX(40px) translateY(-123px); 
+           opacity: 0.3; }
+  }
+  @keyframes fire5 {
+    100% { transform:translateX(-60px) translateY(-123px); 
+           opacity: 0.3; }
+  }
+  @keyframes fire4 {
+    100% { transform:translateX(-40px) translateY(-123px); 
+           opacity: 0.3; }
   }
     
   @keyframes fire3 {
-    100% { transform:translateX(20px) translateY(-93px); 
+    100% { transform:translateX(20px) translateY(-123px); 
            opacity: 0.3; }
   }
   
   @keyframes fire2 {
-    100% { transform:translateX(-5px) translateY(-90px); 
+    100% { transform:translateX(-5px) translateY(-100px); 
            opacity: 0.3; }
   }
   
   @keyframes fire {
-    100% { transform:translateX(-25px) translateY(-95px); 
+    100% { transform:translateX(-25px) translateY(-125px); 
            opacity: 0.3; }
   }
   
